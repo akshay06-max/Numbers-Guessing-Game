@@ -48,8 +48,8 @@ def play_game():
     attempts = 0
     
     print("\n" + BOLD + MAGENTA + "--------------------------------------------------" + RESET)
-    type_effect(f"🔮 Level Loaded: {level_name}. Range set from 1 to {max_range}.")
-    type_effect("🔮 The system has locked in the secret number. Begin guessing...")
+    type_effect(f" Level Loaded: {level_name}. Range set from 1 to {max_range}.")
+    type_effect(" The system has locked in the secret number. Begin guessing...")
     print(BOLD + MAGENTA + "--------------------------------------------------\n" + RESET)
 
     while True:
@@ -70,16 +70,16 @@ def play_game():
 
             # Feedback mechanics
             if user_guess < secret_number:
-                print(BLUE + "📉 TOO LOW! Truncating lower data registers.\n" + RESET)
+                print(BLUE + " TOO LOW! Truncating lower data registers.\n" + RESET)
             elif user_guess > secret_number:
-                print(RED + "📈 TOO HIGH! Over-budgeting the upper registry.\n" + RESET)
+                print(RED + " TOO HIGH! Over-budgeting the upper registry.\n" + RESET)
             else:
                 # Victory sequence
                 print("\n" + BOLD + GREEN + "==================================================" + RESET)
                 print(BOLD + GREEN + "🎉 CRITICAL HIT! ACCESS GRANTED! 🎉" + RESET)
                 print(BOLD + GREEN + "==================================================" + RESET)
                 type_effect(f"✨ You successfully cracked the code: {BOLD}{secret_number}{RESET}{GREEN}!")
-                type_effect(f"📊 Total processing attempts required: {BOLD}{attempts}{RESET}")
+                type_effect(f" Total processing attempts required: {BOLD}{attempts}{RESET}")
                 
           # Performance Rating Evaluation (scaled to difficulty)
 if max_range == 50:
@@ -90,11 +90,11 @@ else:  # 500
     thresholds = (10, 20)
 
 if attempts <= thresholds[0]:
-    print(BOLD + YELLOW + "🏅 RANK: Quantum Intelligence (Flawless Performance!)" + RESET)
+    print(BOLD + YELLOW + " RANK: Quantum Intelligence (Flawless Performance!)" + RESET)
 elif attempts <= thresholds[1]:
-    print(BOLD + CYAN + "🏅 RANK: Codebreaker Pro (Excellent Deduction!)" + RESET)
+    print(BOLD + CYAN + " RANK: Codebreaker Pro (Excellent Deduction!)" + RESET)
 else:
-    print(BOLD + BLUE + "🏅 RANK: Cyber Navigator (Determined Victory!)" + RESET)
+    print(BOLD + BLUE + " RANK: Cyber Navigator (Determined Victory!)" + RESET)
 
 if __name__ == "__main__":
     while True:
