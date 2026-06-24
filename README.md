@@ -1,20 +1,31 @@
-An elite, arcade-style terminal command-line guessing game built with Python. This version steps away from basic print statements, utilizing custom UI wrappers, text-typing pacing animations, multi-tiered difficulty ranks, and robust ANSI color profiling.
+# 🎯 The Ultimate Number Matrix
 
-## 🕹️ Advanced Features
-* **Cinematic Animation UI:** Includes custom delays simulating terminal matrix loading protocols.
-* **Multi-Tier Difficulties:** Choose your challenge domain:
-  * **Apprentice Tier:** Range 1 - 50
-  * **Specialist Tier:** Range 1 - 100
-  * **Grandmaster Tier:** Range 1 - 500
-* **Vibrant ANSI Color Engine:** Instantly alerts users with distinct color signatures: High (`Red`), Low (`Blue`), Ranks (`Yellow`), and Victories (`Green`).
-* **Performance Rating Ranks:** Evaluates player performance dynamically based on total turn metrics (e.g., *Quantum Intelligence*, *Codebreaker Pro*).
-* **Escape Protocols:** Type `quit` at any time during active runtime sequences to step down safely.
+An arcade-style terminal number guessing game built with Python. Features cinematic animations, ANSI color feedback, multi-tier difficulty, and performance rankings.
+
+![Game Screenshot](output2.png)
+
+## 🕹️ Features
+- Typewriter animation UI
+- 3 difficulty tiers: Apprentice (1–50), Specialist (1–100), Grandmaster (1–500)
+- ANSI color feedback (Too High / Too Low / Win)
+- Performance rank based on attempts
+- Quit anytime by typing `quit`
 
 ## 🛠️ Requirements
-* Python 3.x
-* Modern terminal suite support for ANSI formatting (VS Code terminal, iTerm2, Windows Terminal, Mac Terminal).
+- Python 3.x
+- A terminal that supports ANSI colors (VS Code, iTerm2, Windows Terminal)
 
-## 📦 Run Commands
-1. Clone the repository:
-   ```bash
-   
+## 🚀 How to Run
+
+```bash
+git clone https://github.com/akshay06-max/Numbers-Guessing-Game.git
+cd Numbers-Guessing-Game
+python main.py
+```
+
+## 📊 Performance Ranks
+| Rank | Attempts |
+|------|----------|
+| 🏅 Quantum Intelligence | ≤ 4 |
+| 🏅 Codebreaker Pro | ≤ 8 |
+| 🏅 Cyber Navigator | 9+ |
