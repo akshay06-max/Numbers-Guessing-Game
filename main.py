@@ -81,20 +81,31 @@ def play_game():
                 type_effect(f"✨ You successfully cracked the code: {BOLD}{secret_number}{RESET}{GREEN}!")
                 type_effect(f" Total processing attempts required: {BOLD}{attempts}{RESET}")
                 
-          # Performance Rating Evaluation (scaled to difficulty)
-if max_range == 50:
-    thresholds = (3, 6)
-elif max_range == 100:
-    thresholds = (5, 10)
-else:  # 500
-    thresholds = (10, 20)
+         else:
+                # Victory sequence
+                print("\n" + BOLD + GREEN + "==================================================" + RESET)
+                print(BOLD + GREEN + "🎉 CRITICAL HIT! ACCESS GRANTED! 🎉" + RESET)
+                print(BOLD + GREEN + "==================================================" + RESET)
+                type_effect(f"✨ You successfully cracked the code: {BOLD}{secret_number}{RESET}{GREEN}!")
+                type_effect(f" Total processing attempts required: {BOLD}{attempts}{RESET}")
+                
+                # Performance Rating Evaluation (scaled to difficulty)
+                if max_range == 50:
+                    thresholds = (3, 6)
+                elif max_range == 100:
+                    thresholds = (5, 10)
+                else:  # 500
+                    thresholds = (10, 20)
 
-if attempts <= thresholds[0]:
-    print(BOLD + YELLOW + " RANK: Quantum Intelligence (Flawless Performance!)" + RESET)
-elif attempts <= thresholds[1]:
-    print(BOLD + CYAN + " RANK: Codebreaker Pro (Excellent Deduction!)" + RESET)
-else:
-    print(BOLD + BLUE + " RANK: Cyber Navigator (Determined Victory!)" + RESET)
+                if attempts <= thresholds[0]:
+                    print(BOLD + YELLOW + " RANK: Quantum Intelligence (Flawless Performance!)" + RESET)
+                elif attempts <= thresholds[1]:
+                    print(BOLD + CYAN + " RANK: Codebreaker Pro (Excellent Deduction!)" + RESET)
+                else:
+                    print(BOLD + BLUE + " RANK: Cyber Navigator (Determined Victory!)" + RESET)
+                
+                print(BOLD + GREEN + "==================================================\n" + RESET)
+                break
 
 if __name__ == "__main__":
     while True:
